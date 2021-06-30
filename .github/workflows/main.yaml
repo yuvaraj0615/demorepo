@@ -23,7 +23,7 @@ jobs:
       - name: Build
         # remove --minify tag if you do not need it
         # docs: https://gohugo.io/hugo-pipes/minification/
-        run: HUGO_THEME="Mainroad" hugo --themesDir themes/mainroad --i18n-warnings -v #hugo --minify
+        run: HUGO_THEME="Mainroad" hugo --i18n-warnings -v #hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
